@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different ways to add CSS</title>
+</head>
+<link rel="stylesheet" href="./Que_1.css">
+<body>
+    <!-- There are 3 ways to add css to Html:-
+    1. Inline 
+    2. Internal
+    3. External
+    But when you apply the 3 ways toghter is will give priority to inline css. -->
+    <style>
+        .box2 {
+            background-color: yellow;
+        }
+        .box4 {
+            background-color: aquamarine;
+        }
+    </style>
+    <div style="background-color: red;">Box 1:Inline </div>
+    <div class="box2">Box 2:Internal</div>
+    <div class="box3">Box 3:External</div>
+    <!-- Targeting same element with 3 ways -->
+    <div style="background-color:brown;" class="box4">Box 4:Inline+Internal+External</div>
+    <!-- When you target same element with 3 different ways it will give priority to the inline one. -->
+</body>
+</html>
